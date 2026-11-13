@@ -24,20 +24,22 @@ public class Main {
 
         for (int i = 0; i < registrationAttempts; i++)
         {
-            while (registrations.size() != capacity)
-            {
-                System.out.println("Student ID: ");
-                String studentID = input.next();
+            System.out.println("Student ID: ");
+            String studentID = input.next();
 
-                if (registrations.contains(studentID))
-                {
-                    System.out.println("Already registered.");
-                    rejectedAttempts++;
-                }
-                else {
-                    registrations.add(studentID);
-                    System.out.println("Registered.");
-                }
+            if (registrations.contains(studentID))
+            {
+                System.out.println("Already registered.");
+                rejectedAttempts++;
+            }
+            else if (registrations.size() == capacity)
+            {
+                System.out.println("Workshop is already full.");
+            }
+            else
+            {
+                registrations.add(studentID);
+                System.out.println("Registered.");
             }
         }
 

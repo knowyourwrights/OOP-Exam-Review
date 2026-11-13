@@ -25,6 +25,13 @@ Describe two or three important problems you identified
 in your original code. Explain what you changed and
 why it works now.
 
+- aelealaelae
+laelaelealaeealeaplel
+- lealealaelae
+aellaeeeads
+- laepelpfsldfkmlsdknsdf
+aleleapflaplsas
+
 ## 3. Reflection
 
 **What did you understand during the examination
@@ -37,8 +44,17 @@ actually working or not. The skeleton for the rest of my code/the tasks is there
 **What was the most important thing you learned
 from correcting your code?**
 
+Not to overcomplicate. I had listened to the other class' opinions of the test, and it left me
+overthinking the question when I sat it. The code in my original program 
+
 **What would you do differently in your next
 coding test?**
+
+Make my cheat sheet a little more expansive. The one I had covered how to set up the repo & Github,
+but that was covered within the first five minutes of the class, which made it redundant. I would also
+look into certain topics on the notes in more depth in my own time (e.g. the HashSets). Despite having
+all the notes at my disposal I found they did not tell me much at all about the topics I needed, which means
+my own separate research is required in the future.
 
 ---
 
