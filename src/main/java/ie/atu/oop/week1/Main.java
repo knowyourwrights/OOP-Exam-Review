@@ -16,6 +16,12 @@ public class Main {
 
         System.out.println("Workshop name: ");
         String workshopName = input.nextLine();
+
+        if (workshopName.isBlank())
+        {
+            System.out.println("Workshop name cannot be empty.\nWorkshop name: ");
+            workshopName = input.nextLine();
+        }
         System.out.println("Capacity: ");
         int capacity = input.nextInt();
 
@@ -24,20 +30,27 @@ public class Main {
 
         for (int i = 0; i < registrationAttempts; i++)
         {
-            while (registrations.size() != capacity)
-            {
-                System.out.println("Student ID: ");
-                String studentID = input.next();
+            System.out.println("Student ID: ");
+            String studentID = input.next();
 
-                if (registrations.contains(studentID))
-                {
-                    System.out.println("Already registered.");
-                    rejectedAttempts++;
-                }
-                else {
-                    registrations.add(studentID);
-                    System.out.println("Registered.");
-                }
+            if (registrations.contains(studentID))
+            {
+                System.out.println("Already registered.");
+                rejectedAttempts++;
+            }
+            else if (registrations.size() >= capacity)
+            {
+                System.out.println("Workshop full.");
+                rejectedAttempts++;
+            }
+            else if (studentID.isBlank())
+            {
+                System.out.println("Student ID cannot be blank.");
+                rejectedAttempts++;
+            }
+            else {
+                registrations.add(studentID);
+                System.out.println("Registered.");
             }
         }
 
